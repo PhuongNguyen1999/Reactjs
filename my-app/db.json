@@ -1,0 +1,378 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "user": [
+    {
+      "id": 1,
+      "name": "Phương Béo",
+      "email": "thanhphuongnd99@gmail.com",
+      "address": "Giao Thuy",
+      "password": "123456"
+    },
+    {
+      "id": 2,
+      "name": "Thanh Nguyen",
+      "email": "thanhnguyen@gmail.com",
+      "address": "Giao Thuy",
+      "password": "123456"
+    },
+    {
+      "id": 3,
+      "name": "Tuan Nguyen",
+      "email": "tuannguyen@gmail.com",
+      "address": "Giao Thuy",
+      "password": "123456"
+    },
+    {
+      "id": 4,
+      "name": "Binh Nguyen",
+      "email": "binhnguyen@gmail.com",
+      "address": "Giao Thuy",
+      "password": "123456"
+    },
+    {
+      "id": 5,
+      "name": "nguyet cao",
+      "email": "nguyetcao@gmail.com",
+      "address": "Giao Thuy",
+      "password": "123456"
+    },
+    {
+      "name": "Phuong Nguyen",
+      "email": "thanhphuongnd99@gmail.com",
+      "password": "sdasdsad",
+      "address": "hà đông hà nội",
+      "id": 6
+    },
+    {
+      "name": "Phuong Nguyen",
+      "email": "phuongntph08862@fpt.edu.vn",
+      "address": "hà đông hà nội viet nam",
+      "id": 7
+    }
+  ],
+  "category": [
+    {
+      "id": 1,
+      "name": "Apple"
+    },
+    {
+      "id": 2,
+      "name": "Samsung"
+    },
+    {
+      "id": 3,
+      "name": "Xiaomi"
+    },
+    {
+      "id": 4,
+      "name": "Huawei"
+    },
+    {
+      "id": 5,
+      "name": "Oppo"
+    },
+    {
+      "name": "Phuong Nguyen",
+      "id": 6
+    },
+    {
+      "name": "thay dat dep trai",
+      "id": 7
+    }
+  ],
+  "product": [
+    {
+      "id": 1,
+      "categoryId": 1,
+      "price": "25.000.00",
+      "name": "Iphone 11 Pro Max 512GB",
+      "image": "https://cdn.fptshop.com.vn/Uploads/Originals/2019/9/11/637037687763926758_11-pro-max-xanh.png",
+      "detail": "iPhone 11 Pro Max 512GB là phiên bản có bộ nhớ nhiều nhất, màn hình lớn nhất và thời lượng pin tuyệt vời nhất hiện nay. Bạn sẽ được cầm trên tay chiếc điện thoại đẳng cấp mà bất cứ ai cũng mơ ước.",
+      "status": true
+    },
+    {
+      "id": 2,
+      "categoryId": 1,
+      "price": "21.000.00",
+      "name": "Iphone 11 256GB",
+      "image": "https://cdn.fptshop.com.vn/Uploads/Originals/2019/9/11/637037652463329577_11-do.png",
+      "detail": "Với bộ nhớ trong lên tới 256GB, phiên bản iPhone 11 256GB thoải mái cho mọi nhu cầu của người dùng, đồng thời bạn sẽ được sở hữu chiếc điện thoai mạnh mẽ nhất, camera xuất sắc và nhiều lựa chọn màu hấp dẫn.",
+      "status": true
+    },
+    {
+      "id": 3,
+      "categoryId": 1,
+      "price": "20.000.00",
+      "name": "Iphone Xsmax 256GB",
+      "image": "https://cdn.fptshop.com.vn/Uploads/Originals/2018/10/11/636748771945393060_iPhone-Xs-Max-gold.png",
+      "detail": "iPhone Xs Max 256GB là chiếc iPhone có màn hình lớn nhất, bộ nhớ trong dồi dào, mang trên mình những công nghệ đỉnh cao hoàn hảo.",
+      "status": true
+    },
+    {
+      "id": 4,
+      "categoryId": 1,
+      "price": "10.000.00",
+      "name": "Iphone 8 Plus 64GB",
+      "image": "https://cdn.fptshop.com.vn/Uploads/Originals/2017/11/10/636459041871679213_1.jpg",
+      "detail": "Apple bất ngờ ra mắt bộ đôi iPhone 8 và iPhone 8 Plus tạo ra cơn bão mới càn quét hết các bảng xếp hạng siêu phẩm. Như thường lệ, iPhone 8 Plus từ thiết kế cho tới tính năng đều mang đến cho người dùng những trải nghiệm thú vị tuyệt vời không thể bỏ lỡ.",
+      "status": true
+    },
+    {
+      "id": 5,
+      "categoryId": 1,
+      "price": "7.000.00",
+      "name": "Iphone 7 Plus 32GB",
+      "image": "https://cdn.fptshop.com.vn/Uploads/Originals/2019/1/21/636836628988322696_ip7-plus-vang-1.png",
+      "detail": "iPhone 7 Plus dường như là sản phẩm được Apple chăm chút để vượt xa iPhone 7, trở thành sản phẩm rất đáng để nâng cấp so với iPhone 6s Plus khi được nâng cấp thêm camera kép cùng chức năng chụp chân dung xoá phông cực \"hot\".",
+      "status": true
+    },
+    {
+      "id": 6,
+      "categoryId": 1,
+      "price": "5.000.00",
+      "name": "Iphone 6s Plus 16GB",
+      "image": "https://cdn.fptshop.com.vn/Uploads/Originals/2020/1/7/637139916609041371_6s-pl-vang-1.png",
+      "detail": "Apple iPhone 6s Plus là chiếc iPhone màn hình lớn nhất, cho bạn làm được nhiều việc hơn trên không gian rộng lớn. Hơn nữa, những tính năng mới như 3D Touch, Live Photos hay camera 12MP xuất sắc sẽ mang đến sự hài lòng nhất cho bạn khi sử dụng một chiếc smartphone thực sự cao cấp.\n\n",
+      "status": true
+    },
+    {
+      "id": 7,
+      "categoryId": 2,
+      "price": "23.900.00",
+      "name": "Samsung Galaxy S20+",
+      "image": "https://cdn.fptshop.com.vn/Uploads/Originals/2020/2/12/637170944337163053_ss-s20-plus-xanh-1.png",
+      "detail": "Siêu phẩm Samsung Galaxy S20+ đã xuất hiện. Thể hiện đẳng cấp đích thực với thiết kế cao cấp, màn hình lớn đẹp tuyệt mỹ, 5 camera chuyên nghiệp và hiệu suất đáng kinh ngạc.",
+      "status": true
+    },
+    {
+      "id": 8,
+      "categoryId": 2,
+      "price": "5.490.00",
+      "name": "Samsung Galaxy M21",
+      "image": "https://cdn.fptshop.com.vn/Uploads/Originals/2020/3/27/637209161431175435_ss-m21-xanh-1.png",
+      "detail": "Đắm chìm trong màn hình tràn viền vô cực Infinity-U 6,4 inch rộng lớn, thỏa mãn niềm đam mê nhiếp ảnh với 3 camera sau ấn tượng, đặc biệt là viên pin dung lượng tới 6000 mAh cho 2 ngày sử dụng thoải mái, Samsung Galaxy M21 thực sự mang đến những giờ phút giải trí bất tận.",
+      "status": true
+    },
+    {
+      "id": 9,
+      "categoryId": 2,
+      "price": "9.900.00",
+      "name": "Samsung Galaxy Xcover Pro",
+      "image": "https://cdn.fptshop.com.vn/Uploads/Originals/2020/3/17/637200538538541303_samsung-galaxy-xcover-pro-1.png",
+      "detail": "Samsung có thể sớm công bố một chiếc điện thoại mới thuộc dòng Xcover của mình. Có tên gọi là XCover Pro, điện thoại này mới đây vừa được cơ quan Bluetooth SIG phê duyệt, một dấu hiệu cho thấy máy đã sẵn sàng tiến ra thị trường.",
+      "status": true
+    },
+    {
+      "id": 10,
+      "categoryId": 2,
+      "price": "7.500.00",
+      "name": "Samsung Galaxy A21",
+      "image": "https://cdn.fptshop.com.vn/Uploads/Originals/2020/2/21/637179004333993029_ss-fold-2-1.png",
+      "detail": "Trong nỗ lực cung cấp pin lớn hơn cho tất cả mọi người, Samsung đang cung cấp pin dung lượng 5.000mAh vào hầu hết mọi thiết bị giá rẻ. Bây giờ, Samsung Galaxy A21 sắp ra mắt cũng sẽ có pin như vậy.",
+      "status": true
+    },
+    {
+      "id": 11,
+      "categoryId": 2,
+      "price": "21.500.00",
+      "name": "Samsung Galaxy S20",
+      "image": "https://cdn.fptshop.com.vn/Uploads/Originals/2020/3/2/637187627616943424_ss-a71-5g-1.png",
+      "detail": "Chỉ trong vòng chưa đầy 7 ngày, khách hàng sở hữu phiên bản chip Snapdragon trên siêu phẩm Samsung Galaxy S20 đã nhận bản cập nhật, bao gồm cải thiện tính năng camera lấy nét tự động trên thiết bị của mình.",
+      "status": true
+    },
+    {
+      "id": 12,
+      "categoryId": 2,
+      "price": "6.000.00",
+      "name": "Samsung Galaxy M11",
+      "image": "https://cdn.fptshop.com.vn/Uploads/Originals/2020/2/13/637171997548387689_ss-m11-1.png",
+      "detail": "Galaxy M11 sẽ có thiết kế vô cùng ấn tượng khi sử dụng màn hình “đục lỗ” bắt mắt ở mặt trước để chứa camera selfie nằm ở góc trên cùng bên trái. Còn ở mặt sau, điện thoại cũng có mặt lưng làm bằng nhựa và đi kèm hệ thống 3 camera sau xếp dọc.",
+      "status": true
+    },
+    {
+      "id": 13,
+      "categoryId": 3,
+      "price": "9.000.00",
+      "name": "Xiaomi Note 9 Pro",
+      "image": "https://cdn.fptshop.com.vn/Uploads/Thumbs/2020/3/2/637187671278532425_xiaomi-redmi-note-9-dd.png",
+      "detail": "điện thoại này được phát hiện sử dụng chipset Snapdragon 720G, có RAM 6GB và chạy trên hệ điều hành Android 10 với giao diện người dùng MIUI 11. Tuy nhiên, nhiều khả năng điện thoại này sẽ còn có nhiều biến thể cấu hình khác.",
+      "status": true
+    },
+    {
+      "id": 14,
+      "categoryId": 3,
+      "price": "2.190.00",
+      "name": "Xiaomi Redmi 6 32GB",
+      "image": "https://cdn.fptshop.com.vn/Uploads/Originals/2018/12/14/636803762524321252_xiaomi-redmi-6-3gb-Vang-1.png",
+      "detail": "Xiaomi Redmi 6 được mệnh danh là “ông hoàng camera kép” ở phân khúc giá rẻ với khả năng chụp ảnh tuyệt vời và con chip tiết kiệm điện, cho thời lượng pin vượt trội.",
+      "status": true
+    },
+    {
+      "id": 15,
+      "categoryId": 3,
+      "price": "3.190.00",
+      "name": "Xiaomi Redmi 8 64GB",
+      "image": "https://cdn.fptshop.com.vn/Uploads/Originals/2020/3/9/637193435367227582_redmi9-xanh-1.png",
+      "detail": "Xiaomi Redmi 8 sở hữu thời lượng pin vượt trội, cấu hình mạnh mẽ nay còn ấn tượng hơn bởi phiên bản 4GB RAM, 64GB bộ nhớ trong, cho người dùng trải nghiệm liền mạch và mượt mà trong tầm giá rẻ.",
+      "status": true
+    },
+    {
+      "id": 16,
+      "categoryId": 3,
+      "price": "2.590.00",
+      "name": "Xiaomi Redmi 8 32GB",
+      "image": "https://cdn.fptshop.com.vn/Uploads/Originals/2020/3/9/637193676110485425_redmi8-do-1.png",
+      "detail": "Bạn đang cần một chiếc điện thoại “ngon, bổ, rẻ” đúng nghĩa, vừa cấu hình “khủng”, vừa chụp ảnh đỉnh cao, lại vừa có giá cực rẻ, Xiaomi Redmi Note 8 3GB chính là sản phẩm bạn đang tìm kiếm.",
+      "status": true
+    },
+    {
+      "id": 17,
+      "categoryId": 3,
+      "price": "5.750.00",
+      "name": "Xiaomi Redmi K30 Pro",
+      "image": "https://cdn.fptshop.com.vn/Uploads/Originals/2020/3/2/637187662757409641_xiaomi-redmi-k30-pro-1.png",
+      "detail": "Redmi là thương hiệu con nổi tiếng của Xiaomi, mới đây, hãng đã trình làng bộ đôi Remdi K30 Pro và K30 Pro Zoom thế hệ mới vào đầu tuần này. Cả hai sản phẩm dự kiến sẽ rất hot sau khi lên kệ bởi mức giá thành quá mức hấp dẫn so với những công nghệ và cấu hình mà Redmi đem tới.",
+      "status": true
+    },
+    {
+      "id": 18,
+      "categoryId": 3,
+      "price": "6.500.00",
+      "name": "Xiaomi Redmi 10X 4G",
+      "image": "https://cdn.fptshop.com.vn/Uploads/Originals/2020/3/2/637187666649342350_xiaomi-redmi-k30-pro-1.png",
+      "detail": "Redmi 10X 4G là một phát hiện đặc biệt của XDA, trong quá khứ, Xiaomi từng tung ra các phiên bản “X” cho nhiều dòng sản phẩm đáng chú ý của mình. Có thể kể tới như Mi 5X hoặc Mi 6X, tuy nhiên, nếu thông tin trong MIUI 11 là chính xác thì Redmi 10X 4G sẽ là chiếc điện thoại Redmi đầu tiên có phiên bản “X” kể từ khi thương hiệu này tách ra độc lập với Xiaomi.",
+      "status": true
+    },
+    {
+      "id": 19,
+      "categoryId": 4,
+      "price": "16.990.00",
+      "name": "Huawei P20 Pro",
+      "image": "https://cdn.fptshop.com.vn/Uploads/Originals/2018/12/18/636807471218468552_huawei-p20-pro-xanh-1.png",
+      "detail": "Phiên bản EMUI 10 sẽ mang đến rất nhiều cải tiến và làm mới lại giao diện trên các thiết bị Huawei. Trong đó, EMUI 10 hỗ trợ giao diện chủ đề tối toàn hệ thống. Như vậy, bản cập nhật mới sẽ mang lại trải nghiệm hoàn toàn mới cho người dùng Huawei P20 Pro. ",
+      "status": true
+    },
+    {
+      "id": 20,
+      "categoryId": 4,
+      "price": "3.590.00",
+      "name": "Huawei Y9",
+      "image": "https://images.fpt.shop/unsafe/fit-in/465x465/filters:quality(90):fill(white)/cdn.fptshop.com.vn/Uploads/Originals/2019/2/22/636864401747926277_huawei-y9-2019-blue-1.png",
+      "detail": "Huawei Y9 2019 sở hữu màn hình siêu lớn tới 6,5 inch và 4 camera AI, mang đến cho bạn những trải nghiệm đáng kinh ngạc.",
+      "status": true
+    },
+    {
+      "id": 21,
+      "categoryId": 4,
+      "price": "5.900.00",
+      "name": "Huawei GR5",
+      "image": "https://cdn.fptshop.com.vn/Uploads/Originals/2016/5/9/635984096192128238_gr5-1.jpg",
+      "detail": "Là một phiên bản nâng cấp của Huawei GR5 với nhiều tính năng mới độc đáo, Huawei GR5 2017 còn có thiết kế gần như hoàn thiện và thay đổi hoàn toàn so với phiên bản trước, là đối thủ cạnh tranh trực tiếp với nhiều sản phẩm cao cấp đình đám nhất hiện nay. ",
+      "status": true
+    },
+    {
+      "id": 22,
+      "categoryId": 4,
+      "price": "3.990.00",
+      "name": "Huawei Nova 3e",
+      "image": "https://cdn.fptshop.com.vn/Uploads/Originals/2018/4/7/636586929636409378_1.jpg",
+      "detail": "Thời gian gần đây, hãng điện thoại Huawei liên tiếp mang đến cho người dùng những sự lựa chọn hấp dẫn trong phân khúc tầm trung. Cụ thể hơn, hãng đã lần lượt cho ra mắt smartphone sở hữu thiết kế, cấu hình và công nghệ hiện đại nhưng giá bán vẫn được giữ ở mức vừa phải.",
+      "status": true
+    },
+    {
+      "id": 23,
+      "categoryId": 4,
+      "price": "5.490.00",
+      "name": "Huawei P30 Pro",
+      "image": "https://images.fpt.shop/unsafe/fit-in/465x465/filters:quality(90):fill(white)/cdn.fptshop.com.vn/Uploads/Originals/2018/5/17/636621882488228742_y6-prime-gold.png",
+      "detail": "Tạo ấn tượng. Bộ 4 camera Leica hỗ trợ sở thích chụp ảnh, giúp bạn chiêm ngưỡng thế giới một cách trọn vẹn. Bộ camera vô đối với 1 ống kính SuperZoom, 1 ống kính siêu cảm biến 40 MP, 1 ống kính góc siêu rộng 20MP và 1 ống kính HUAWEI TOF, mang đến cho bạn khả năng bắt trọn vẻ đẹp thế giới.",
+      "status": true
+    },
+    {
+      "id": 24,
+      "categoryId": 4,
+      "price": "2.990.00",
+      "name": "Huawei Y7 Prime",
+      "image": "https://cdn.fptshop.com.vn/Uploads/Originals/2017/11/2/636452101790369762_1.jpg",
+      "detail": "Huawei Y7 Prime sở hữu thiết kế nhôm nguyên khối sang trọng cùng màn hình HD 5.5 inch, dung lượng pin lên đến 4.000 mAh, đây chắn chắn là một trong những điện thoại bạn không thể bỏ qua trong phân khúc tầm trung.",
+      "status": true
+    },
+    {
+      "id": 25,
+      "categoryId": 5,
+      "price": "5.290.00",
+      "name": "Oppo A31 6GB-128GB",
+      "image": "https://images.fpt.shop/unsafe/fit-in/465x465/filters:quality(90):fill(white)/cdn.fptshop.com.vn/Uploads/Originals/2020/2/28/637184863247061350_oppo-a31-den-1.png",
+      "detail": "Mặc dù OPPO A31 chỉ được trang bị viên pin 4.230 mAh thôi nhưng thời lượng sử dụng lại dài hơn rất nhiều so với thiết bị cao cấp. Không lo phải sạc, khỏi lo sập nguồn và thỏa sức trải nghiệm chính là những ưu điểm vượt trội",
+      "status": true
+    },
+    {
+      "id": 26,
+      "categoryId": 5,
+      "price": "2.990.00",
+      "name": "Oppo A3s 16GB",
+      "image": "https://cdn.fptshop.com.vn/Uploads/Originals/2018/8/2/636688079452249959_oppoA3s-do-1.jpg",
+      "detail": "OPPO A3s 16GB là một chiếc smartphone giá rẻ hiếm hoi trên thị trường sở hữu những tính năng khá hấp dẫn trong năm 2018 đó là camera kép ở mặt lưng và màn hình tai thỏ ở mặt trước.",
+      "status": true
+    },
+    {
+      "id": 27,
+      "categoryId": 5,
+      "price": "5.990.00",
+      "name": "OPPO F5 6GB",
+      "image": "https://cdn.fptshop.com.vn/Uploads/Originals/2018/1/2/636505090574307303_oppo-f5-6gb-1.jpg",
+      "detail": "OPPO F5 6 GB là phiên bản nâng cấp cấu hình của chiếc OPPO F5, chuyên gia selfie làm đẹp thông minh và màn hình tràn viền tuyệt đẹp.",
+      "status": true
+    },
+    {
+      "id": 28,
+      "categoryId": 5,
+      "price": "2.490.00",
+      "name": "Oppo A71K",
+      "image": "https://cdn.fptshop.com.vn/Uploads/Originals/2018/5/21/636624965506859088_1.jpg",
+      "detail": "Oppo A71K (Không tai nghe) là phiên bản mới của Oppo A71 với sự nâng cấp đáng chú ý của hệ thống phần cứng cùng hệ thống camera cho khả năng chụp ảnh selfie đẹp hơn với hỗ trợ của AI. Bên cạnh đó, A71K (Không tai nghe) vẫn sở hữu khả năng hiển thị sắc nét cùng nhiều tính năng khác, hứa hẹn sẽ là một lựa chọn tuyệt vời cho nhiều người dùng trong năm 2018 này.",
+      "status": true
+    },
+    {
+      "id": 29,
+      "categoryId": 5,
+      "price": "3.490.00",
+      "name": "OPPO A7",
+      "image": "https://images.fpt.shop/unsafe/fit-in/465x465/filters:quality(90):fill(white)/cdn.fptshop.com.vn/Uploads/Originals/2018/12/24/636812686853676126_oppo-a7-1.png",
+      "detail": "OPPO A7 là một tuyệt tác về thiết kế với màn hình “giọt nước” thời trang, màu sắc lạ mắt. Hơn thế nữa máy còn sở hữu camera xuất sắc và viên pin dung lượng cao đến khó tin.",
+      "status": true
+    },
+    {
+      "id": 30,
+      "categoryId": 5,
+      "price": "6.500.00",
+      "name": "OPPO F11 Pro",
+      "image": "https://cdn.fptshop.com.vn/Uploads/Originals/2019/4/12/636906557505622951_oppo-f11-pro-xanh-1.png",
+      "detail": "Phiên bản bộ nhớ trong cực lớn OPPO F11 Pro 128GB vẫn có giá bán rất hấp dẫn, nhưng cho phép bạn lưu trữ được nhiều hơn, đặc biệt là những bức ảnh chụp từ camera 48MP đẳng cấp.",
+      "status": true
+    },
+    {
+      "name": "Phuong Nguyen",
+      "price": "450000",
+      "categoryId": "1",
+      "detail": "dsdasd",
+      "id": 31
+    }
+  ]
+}
