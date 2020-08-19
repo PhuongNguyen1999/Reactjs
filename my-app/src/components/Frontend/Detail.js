@@ -3,11 +3,14 @@ import {NavLink, useParams} from "react-router-dom";
 import ProductDataService from "../DataService/ProductDataService";
 import Header from "../layout/Frontend/Header";
 import Footer from "../layout/Frontend/Footer";
+import {CartContext} from "../Contexts/Cart";
+import CategoryDataService from "../DataService/CategoryDataService";
 
 const Detail = () => {
     let {id} = useParams();
     useEffect(() => {
         retrieveProducts();
+        retrieveCategories();
     }, []);
     const [currentProduct, setCurrentProduct] = useState(null);
     /*
@@ -23,9 +26,20 @@ const Detail = () => {
                 console.log(e);
             });
     };
+    const [listCategory, setListCategory] = useState([]);
+    const retrieveCategories = () => {
+        CategoryDataService.getAll()
+            .then(response => {
+                setListCategory(response.data);
+                // console.log(response.data);
+            })
+            .catch(e => {
+                console.log(e);
+            });
+    };
     return (
         <div>
-            <Header />
+            <Header/>
             <section className="banner-area organic-breadcrumb">
                 <div className="container">
                     <div className="breadcrumb-banner d-flex flex-wrap align-items-center justify-content-end">
@@ -53,8 +67,17 @@ const Detail = () => {
                                     <h3>{currentProduct.name}</h3>
                                     <h2>{currentProduct.price}</h2>
                                     <ul className="list">
-                                        <li><a className="active" href="#"><span>Category</span> : Apple</a></li>
-                                        <li><a href="#"><span>Availibility</span> : {currentProduct.status ? 'In stock' : 'Out of stock'}</a></li>
+                                        <li>
+                                            <a href="#">
+                                                <span className="pull-left">Category :</span>
+                                                {listCategory.map(({id, name},index) =>
+                                                    <span className="pull-left category_detail" key={index}>{currentProduct.categoryId == id ? name : ''}</span>
+                                                )}
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><span>Availibility : </span>{currentProduct.status ? 'In stock' : 'Out of stock'}</a>
+                                        </li>
                                     </ul>
                                     <p>{currentProduct.detail}</p>
                                     <div className="product_count">
@@ -62,27 +85,43 @@ const Detail = () => {
                                         <input type="text" name="qty" id="sst" maxLength={12} defaultValue={1}
                                                title="Quantity:" className="input-text qty"/>
                                         <button className="increase items-count" type="button"
-                                                onClick={() => {let result = document.getElementById('sst'); let sst = result.value; if( !isNaN( sst )) result.value++;return false;}}>
+                                                onClick={() => {
+                                                    let result = document.getElementById('sst');
+                                                    let sst = result.value;
+                                                    if (!isNaN(sst)) result.value++;
+                                                    return false;
+                                                }}>
                                             <i className="lnr lnr-chevron-up"/>
                                         </button>
                                         <button className="reduced items-count" type="button"
-                                                onClick={() => {let result = document.getElementById('sst'); let sst = result.value; if( !isNaN( sst ) && sst > 1) result.value--;return false;}}>
+                                                onClick={() => {
+                                                    let result = document.getElementById('sst');
+                                                    let sst = result.value;
+                                                    if (!isNaN(sst) && sst > 1) result.value--;
+                                                    return false;
+                                                }}>
                                             <i className="lnr lnr-chevron-down"/>
                                         </button>
                                     </div>
-                                    <div className="card_area d-flex align-items-center">
-                                        <a className="primary-btn" href="#">Add to Cart</a>
-                                    </div>
+                                    <CartContext.Consumer>
+                                        {({addToCart}) => (
+                                            <div className="card_area d-flex align-items-center">
+                                                <a onClick={() => addToCart(currentProduct)}
+                                                   className="primary-btn">Add to cart
+                                                </a>
+                                            </div>
+                                        )}
+                                    </CartContext.Consumer>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            ):('')}
-            <Footer />
+            ) : ('')}
+            <Footer/>
         </div>
     );
-}
+};
 
 Detail.propTypes = {};
 

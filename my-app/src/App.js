@@ -22,99 +22,106 @@ import Xiaomi from "./components/Frontend/Category/Xiaomi";
 import Huawei from "./components/Frontend/Category/Huawei";
 import Oppo from "./components/Frontend/Category/Oppo";
 import About from "./components/Frontend/About";
+import Cart from "./components/Frontend/Cart";
+import {CartProvider} from "./components/Contexts/Cart";
 
 const App = () => {
     return (
         <div>
-            <BrowserRouter>
-                <div>
-                    <Switch>
-                        <Route path="/admin/:path?" exact>
-                            <Switch>
-                                <Route path="/admin" exact>
-                                    <Dashboard />
-                                </Route>
-                                <Route path="/admin/user">
-                                    <User />
-                                </Route>
-                                <Route path="/admin/product">
-                                    <Product />
-                                </Route>
-                                <Route path="/admin/category">
-                                    <Category />
-                                </Route>
-                            </Switch>
-                        </Route>
-                        <Route path="/admin/user/:path?">
-                            <Switch>
-                                <Route path="/admin/user/add" exact>
-                                    <UserAdd />
-                                </Route>
-                                <Route path="/admin/user/:id">
-                                    <UserEdit />
-                                </Route>
-                            </Switch>
-                        </Route>
-                        <Route path="/admin/product/:path?">
-                            <Switch>
-                                <Route path="/admin/product/add" exact>
-                                    <ProductAdd />
-                                </Route>
-                                <Route path="/admin/product/:id">
-                                    <ProductEdit />
-                                </Route>
-                            </Switch>
-                        </Route>
-                        <Route path="/admin/category/:path?">
-                            <Switch>
-                                <Route path="/admin/category/add" exact>
-                                    <Add />
-                                </Route>
-                                <Route path="/admin/category/:id">
-                                    <CategoryEdit />
-                                </Route>
-                            </Switch>
-                        </Route>
-                        <Route path="/:path?" exact>
-                            <Switch>
-                                <Route path="/" exact>
-                                    <Home />
-                                </Route>
-                                <Route path="/contact">
-                                    <Contact />
-                                </Route>
-                                <Route path="/about">
-                                    <About />
-                                </Route>
-                                <Route path="/login">
-                                    <Login />
-                                </Route>
-                                <Route path="/:id">
-                                    <Detail />
-                                </Route>
-                                <Route component={Error}/>
-                            </Switch>
-                        </Route>
-                        <Route path="/category/:path?">
-                            <Route path="/category/apple/:id">
-                                <Apple />
+            <CartProvider>
+                <BrowserRouter>
+                    <div>
+                        <Switch>
+                            <Route path="/admin/:path?" exact>
+                                <Switch>
+                                    <Route path="/admin" exact>
+                                        <Dashboard />
+                                    </Route>
+                                    <Route path="/admin/user">
+                                        <User />
+                                    </Route>
+                                    <Route path="/admin/product">
+                                        <Product />
+                                    </Route>
+                                    <Route path="/admin/category">
+                                        <Category />
+                                    </Route>
+                                </Switch>
                             </Route>
-                            <Route path="/category/samsung/:id">
-                                <Samsung />
+                            <Route path="/admin/user/:path?">
+                                <Switch>
+                                    <Route path="/admin/user/add" exact>
+                                        <UserAdd />
+                                    </Route>
+                                    <Route path="/admin/user/:id">
+                                        <UserEdit />
+                                    </Route>
+                                </Switch>
                             </Route>
-                            <Route path="/category/xiaomi/:id">
-                                <Xiaomi />
+                            <Route path="/admin/product/:path?">
+                                <Switch>
+                                    <Route path="/admin/product/add" exact>
+                                        <ProductAdd />
+                                    </Route>
+                                    <Route path="/admin/product/:id">
+                                        <ProductEdit />
+                                    </Route>
+                                </Switch>
                             </Route>
-                            <Route path="/category/huawei/:id">
-                                <Huawei />
+                            <Route path="/admin/category/:path?">
+                                <Switch>
+                                    <Route path="/admin/category/add" exact>
+                                        <Add />
+                                    </Route>
+                                    <Route path="/admin/category/:id">
+                                        <CategoryEdit />
+                                    </Route>
+                                </Switch>
                             </Route>
-                            <Route path="/category/oppo/:id">
-                                <Oppo />
+                            <Route path="/:path?" exact>
+                                <Switch>
+                                    <Route path="/" exact>
+                                        <Home />
+                                    </Route>
+                                    <Route path="/contact">
+                                        <Contact />
+                                    </Route>
+                                    <Route path="/about">
+                                        <About />
+                                    </Route>
+                                    <Route path="/login">
+                                        <Login />
+                                    </Route>
+                                    <Route path="/cart">
+                                        <Cart />
+                                    </Route>
+                                    <Route path="/:id">
+                                        <Detail />
+                                    </Route>
+                                    <Route component={Error}/>
+                                </Switch>
                             </Route>
-                        </Route>
-                    </Switch>
-                </div>
-            </BrowserRouter>
+                            <Route path="/category/:path?">
+                                <Route path="/category/apple/:id">
+                                    <Apple />
+                                </Route>
+                                <Route path="/category/samsung/:id">
+                                    <Samsung />
+                                </Route>
+                                <Route path="/category/xiaomi/:id">
+                                    <Xiaomi />
+                                </Route>
+                                <Route path="/category/huawei/:id">
+                                    <Huawei />
+                                </Route>
+                                <Route path="/category/oppo/:id">
+                                    <Oppo />
+                                </Route>
+                            </Route>
+                        </Switch>
+                    </div>
+                </BrowserRouter>
+            </CartProvider>
         </div>
     );
 };

@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import {NavLink} from "react-router-dom";
 import CategoryDataService from "../../DataService/CategoryDataService";
+import {CartContext} from "../../Contexts/Cart";
 
 const Header = () => {
     useEffect(() => {
@@ -64,37 +65,23 @@ const Header = () => {
                                         <li className="nav-item">
                                             <NavLink className="nav-link" to="/register">Register</NavLink>
                                         </li>
-                                        <li className="nav-item">
-                                        </li>
                                     </ul>
                                 </li>
                             </ul>
                             <ul className="nav navbar-nav navbar-right">
                                 <li className="nav-item">
-                                    <a href="#" className="cart"><span className="ti-bag"/></a>
-                                </li>
-                                <li className="nav-item">
-                                    <button className="search">
-                                        <span className="lnr lnr-magnifier" id="search"/>
-                                    </button>
+                                    <CartContext.Consumer>
+                                        {({ cartItems}) => (<NavLink className="nav-link" to="/cart">Cart ({cartItems.length})</NavLink>)}
+                                    </CartContext.Consumer>
                                 </li>
                             </ul>
                         </div>
                     </div>
                 </nav>
             </div>
-            {/*<div className="search_input" id="search_input_box">*/}
-            {/*    <div className="container">*/}
-            {/*        <form className="d-flex justify-content-between">*/}
-            {/*            <input type="text" className="form-control" id="search_input" placeholder="Search Here"/>*/}
-            {/*            <button type="submit" className="btn"/>*/}
-            {/*            <span className="lnr lnr-cross" id="close_search" title="Close Search"/>*/}
-            {/*        </form>*/}
-            {/*    </div>*/}
-            {/*</div>*/}
         </header>
     );
-}
+};
 
 Header.propTypes = {};
 

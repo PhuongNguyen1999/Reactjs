@@ -53,9 +53,9 @@ const User = () => {
                 <div id="content">
                     <Navbar/>
                     <div className="container-fluid">
-                        <div className="card shadow mb-4">
-                            <div className="card-header py-3">
-                                <div className="row d-flex bd-highlight">
+                        <div className="card shadow mb-4 card--content">
+                            <div className="card-header py-3 bg-gradient-dark">
+                                <div className="row d-flex">
                                     <h6 className="mt-2 ml-2 font-weight-bold text-info mr-auto bd-highlight">User
                                         Management</h6>
                                     <NavLink className="btn btn-danger bd-highlight mr-3" to="/admin/user/add">Create

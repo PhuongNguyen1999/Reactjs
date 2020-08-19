@@ -4,6 +4,7 @@ import Header from "../layout/Frontend/Header";
 import Banner from "../layout/Frontend/Banner";
 import Footer from "../layout/Frontend/Footer";
 import {NavLink} from "react-router-dom";
+import {CartContext} from "../Contexts/Cart";
 
 const Home = () => {
     useEffect(() => {
@@ -34,23 +35,30 @@ const Home = () => {
                     </div>
                 </div>
                 <div className="row">
-                    {listProduct.map(({id, name, price, image}, index) =>
+                    {listProduct.map((product, index) =>
                         <div className="col-lg-3" key={index}>
                             <div className="product-grid2">
                                 <div className="product-image2">
-                                    <img className="pic-1" src={image} alt=""/>
+                                    <img className="pic-1" src={product.image} alt=""/>
                                         <ul className="social">
                                             <li>
-                                                <NavLink to={"/" + id} data-tip="Detail">
+                                                <NavLink to="/cart" data-tip="Go to cart">
+                                                    <span className="lnr lnr-cart"></span>
+                                                </NavLink>
+                                            </li>
+                                            <li>
+                                                <NavLink to={"/" + product.id} data-tip="Detail">
                                                     <span className="lnr lnr-eye"></span>
                                                 </NavLink>
                                             </li>
                                         </ul>
-                                        <NavLink to="/add-to-cart" className="add-to-cart">Add to cart</NavLink>
+                                    <CartContext.Consumer>
+                                        {({addToCart}) => (<button onClick={() => addToCart(product)} className="add-to-cart">Add to cart</button>)}
+                                    </CartContext.Consumer>
                                 </div>
                                 <div className="product-content">
-                                    <h3 className="title">{name}</h3>
-                                    <span className="price">{price}</span>
+                                    <h3 className="title">{product.name}</h3>
+                                    <span className="price">{product.price}</span>
                                 </div>
                             </div>
                         </div>
@@ -60,7 +68,7 @@ const Home = () => {
             <Footer/>
         </div>
     );
-}
+};
 
 Home.propTypes = {};
 

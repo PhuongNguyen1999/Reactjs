@@ -36,8 +36,8 @@ const Add = () => {
                 <div id="content">
                     <Navbar/>
                     <div className="container-fluid">
-                        <div className="card shadow mb-4">
-                            <div className="card-header py-3">
+                        <div className="card shadow mb-4 card--content">
+                            <div className="card-header py-3 bg-gradient-dark">
                                 <h6 className="m-0 font-weight-bold text-info">Category Management</h6>
                             </div>
                             <div className="row mx-5 my-5">
